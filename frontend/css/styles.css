@@ -23,12 +23,222 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 #icon-msn img {
   width: 100%;
   height: auto;
+}
+
+.select {
+  background-color: rgba(172, 171, 171, 0.4);
+}
+
+.hidden {
+  display: none;
+}
+
+#login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.window-header {
+  background-color: #0d50ec;
+  padding: 0.2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 1px solid #777778;
+}
+
+#title-login {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 5px;
+}
+
+#title-image {
+  width: 20px;
+  height: auto;
+}
+
+.window-title {
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.window-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-window-minimize,
+.fa-window-maximize,
+.fa-xmark {
+  color: #fff;
+  cursor: pointer;
+  padding: 0.4rem;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.fa-window-minimize,
+.fa-window-maximize {
+  background-color: #0d50ec;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.fa-xmark {
+  background-color: #f43838;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+.fa-window-minimize:hover,
+.fa-window-maximize:hover,
+.fa-xmark:hover {
+  opacity: 1;
+}
+
+#logo-name {
+  position: absolute;
+  top: 30px;
+  left: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 5px;
+}
+
+#logo-name img {
+  width: 40px;
+  height: auto;
+}
+
+#logo-name span {
+  padding-top: 8px;
+  font-size: 0.7rem;
+  color: #1d45a0;
+  font-weight: 600;
+}
+
+.window-content {
+  padding: 20px;
+  text-align: center;
+  background-image: url("/img/background_login.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.login-logo {
+  width: 100px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #1723a4;
+  border-radius: 10px;
+}
+
+label {
+  font-size: 0.7rem;
+  color: #1723a4;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+#form label {
+  margin-top: 8px;
+}
+
+input::placeholder {
+  color: #606382;
+}
+
+#form input {
+  background-color: transparent;
+  border: 1px solid #8d94ea;
+  padding: 0.1rem;
+}
+
+#status {
+  display: flex;
+  align-items: center;
+}
+
+#status select {
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: none;
+  margin-left: 0.2rem;
+  color: #1723a4;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+#checkbox-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  margin-left: -15px;
+  gap: 5px;
+}
+.checkbox-container {
+  display: flex;
+  gap: 5px;
+}
+
+.btn-login {
+  margin-top: 20px;
+  background: linear-gradient(to top, #c9cdf6, #f9f9fb, #fff);
+  width: 50%;
+  height: 25px;
+  color: #5f67be;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border: 2px solid #434dbd;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  margin-top: 15rem;
+}
+
+.links a {
+  font-size: 0.8rem;
+}
+
+.fullscreen {
+  position: fixed !important;
+  width: 90vw !important; /* Agora ocupa toda a largura */
+  height: 70vh !important; /* Mantém a altura da tela */
 }
 
 footer {

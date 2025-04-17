@@ -3,16 +3,116 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>MSN</title>
   </head>
   <body>
     <main>
       <div id="icon-msn">
-        <img src="img/icone_msn.png" alt="Ícone MSN" />
+        <img src="img/icone_home.png" alt="Ícone MSN" />
       </div>
       <!-- Janela de login -->
+      <div id="login-container" class="hidden">
+        <div class="window">
+          <!-- Barra superior -->
+          <div class="window-header">
+            <div id="title-login">
+              <img
+                src="img/icone_home.png"
+                alt="Icon Title Login"
+                id="title-image"
+              />
+              <span class="window-title">MSN Messenger</span>
+            </div>
+            <div class="window-buttons">
+              <i class="fa-solid fa-window-minimize"></i>
+              <i class="fa-regular fa-window-maximize"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+          <!-- Conteúdo da Janela -->
+          <div class="window-content">
+            <div id="logo-name">
+              <img src="img/msn.png" alt="MSN Name" />
+              <span>Messenger</span>
+            </div>
+            <img
+              src="img/login_icon.png"
+              alt="MSN Login Logo"
+              class="login-logo"
+            />
+            <form>
+              <div id="form">
+                <label for="email">Endereço de E-mail:</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Digite seu email..."
+                  autocomplete="email"
+                />
+
+                <label for="input-pwd">Senha:</label>
+                <input
+                  id="input-pwd"
+                  type="password"
+                  placeholder="Digite sua senha..."
+                />
+
+                <div id="status">
+                  <label for="user-status">Status:</label>
+                  <select name="status" id="user-status">
+                    <option value="online">Online</option>
+                    <option value="ausente">Ausente</option>
+                    <option value="ocupado">Ocupado</option>
+                    <option value="offline">Offline</option>
+                  </select>
+                </div>
+              </div>
+
+              <div id="checkbox-div">
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="remember-address"
+                  />
+                  <label for="remember-address">Lembrar meu endereço</label>
+                </div>
+
+                <div class="checkbox-container">
+                  <input
+                    type="checkbox"
+                    name="checkbox"
+                    id="remember-password"
+                  />
+                  <label for="remember-password">Lembrar minha Senha</label>
+                </div>
+
+                <div class="checkbox-container">
+                  <input type="checkbox" name="checkbox" id="automatic-enter" />
+                  <label for="automatic-enter">Entrar automaticamente</label>
+                </div>
+              </div>
+
+              <button class="btn-login" type="submit">
+                Entrar no Messenger
+              </button>
+            </form>
+            <div class="links">
+              <a href="#">Esqueceu sua senha?</a>
+              <a href="#">Obter uma nova conta</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <img src="img/taskbar_windows.jpg" alt="Taskbar Windows XP" />
